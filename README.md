@@ -7,7 +7,7 @@ The application consists in a container which runs a Flask server, this componen
 
 Both the Producer and the Consumer have been created through the OpenStack Horizon Dashboard and  have been inserted in the admin domain so that they have privileges that allow them to retrieve the list of the metrics stored in Gnocchi.
 
-The Consumer is mainly responsible to create a REST application using Flask (the main function only runs the Flask server). The flask server contains an handlers collection in order to manage all the HTTP Requests issued by the producer to given endpoints (each handler starts with @app.route('endpoint)).
+The Consumer is mainly responsible to create a REST application using Flask (the main function only runs the Flask server). The flask server contains an handlers collection in order to manage all the HTTP Requests issued by the producer to given endpoints (each handler starts with `@app.route('endpoint)`).
 Two fundamental statements used inside the code are the following:
 - `redirect(url_for(endpoint))`: issues an HTTP request to a given endpoint
 - `render_template(pagina.html)`: updates the GUI, the HTML code is located inside the directory [..]
