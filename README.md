@@ -1,5 +1,5 @@
 # Cloud Computing Project
-Cloud Computing OpenStack project developed on a cluster of VMs hosted on University servers. The project specification can be found in [..]
+Cloud Computing OpenStack project developed on a cluster of VMs hosted on University servers. The project specification can be found in the PDF file [Project Specs](https://github.com/lossi771/Covid-Timeseries-as-a-Service/blob/main/Project%20Specs.pdf)
 ## OpenStack Project: Timeseries-as-a-Service
 We decided to build a simple GUI in order to show the Italy Covid-related data (both for each single Region and the sum aggregate for Italy-related data) provided by Protezione Civile until a certain day; subsequent data have been randomly produced.
 
