@@ -28,9 +28,9 @@ docker build -t docker_gnocchi .
 ## Dockerfile
 - `FROM`: specifies the image from the central repository to be used, _Alpine_ is a Python lightweigth version
 - `RUN`: specifies the command to be executed inside the container at installation time (in this case we need to create a directory in which we insert the _requirements.txt_ file containing the requirements to be installed through `pip3`)
--	`EXPOSE`: in order to publicly expose a service running inside a container to external networks we need to perform 2 steps: 
-            1. configure a container in order to expose a service through a certain UDP/TCP port. In this case in order to receive http requests we need to expose the service on port 8080;
-            2.  map the chosen port in one of the public ports of the public IP address of the system which is hosting the server. For this reason the container is launched with the command: 
+- `EXPOSE`: in order to publicly expose a service running inside a container to external networks we need to perform 2 steps: 
+  1. configure a container in order to expose a service through a certain UDP/TCP port. In this case in order to receive http requests we need to expose the service on port 8080;
+  2.  map the chosen port in one of the public ports of the public IP address of the system which is hosting the server. For this reason the container is launched with the command: 
 ```docker run -p 5000:8080 -it server-consumer```
 This command tells the container to execute the docker image and to open a shell inside the container once the program will be executed.
 -	`ENTRYPOINT, CMD`: these fields allow to specify the command to be executed when the container is started and could have been done also through the command
