@@ -10,7 +10,7 @@ Both the Producer and the Consumer have been created through the OpenStack Horiz
 The Consumer is mainly responsible to create a REST application using Flask (the main function only runs the Flask server). The flask server contains an handlers collection in order to manage all the HTTP Requests issued by the producer to given endpoints (each handler starts with `@app.route('endpoint)`).
 Two fundamental statements used inside the code are the following:
 - `redirect(url_for(endpoint))`: issues an HTTP request to a given endpoint
-- `render_template(pagina.html)`: updates the GUI, the HTML code is located inside the directory [..]
+- `render_template(pagina.html)`: updates the GUI, the HTML code is located inside the directory [src/172.16.3.54/Docker_gnocchi/templates](https://github.com/lossi771/Covid-Timeseries-as-a-Service/tree/main/src/172.16.3.54/Docker_gnocchi/templates)
 
 
 Since the project was meant to test the understanding of the OpenStack mechanisms acquired during the cloud computing course, all the IP address used inside the files are static so it is difficult to provide the way to launch the program. For a better understanding of the functioning we try to provide some information inside this README.md file and inside the code using comments.
