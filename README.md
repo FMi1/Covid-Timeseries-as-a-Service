@@ -39,3 +39,9 @@ This command tells the container to execute the docker image and to open a shell
 In order to stop a container:
 - `docker ps`: in order to get the running container list
 - `docker stop <ID>`: in order to stop one of the running container to be stopped
+
+
+Markup : * Bullet list
+              * Nested bullet
+                  * Sub-nested bullet etc
+          * Bullet list item 2
